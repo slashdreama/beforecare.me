@@ -1171,34 +1171,11 @@ div.pharm-result span>p {
 	cursor: pointer
 }
 
-.list-result li>ul>li:nth-child(3)>span+p{
-
-	
-
-	
-}
-
-
-.list-result li>ul>li:nth-child(3)>span:hover+p{
-
-	display: block;
-		
-}
-
-
-div#zone3{
-
-	float: left;
-	width: 250px;
-	margin-top: 10px;
-	/* background-color: #56a8f9;
-	 */
-}
 
 .info-bulle {
 	
-	width: 220px;
-	display: none;
+	
+	visibility: hidden;
 	position: absolute;
 	background-color: #323232;
 	font-family: 'open_sanslight';
@@ -1207,11 +1184,30 @@ div#zone3{
 	font-size: 13px;
 	padding: 6px 2px 18px 6px;
 	margin-top: -47px;
-	margin-left: 72px;
+	margin-left: 80px;
 	border: 1px solid #323232;
 	border-radius: 8px;
+	width: 200px;
+	opacity: 0;
 
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+		 
 	}
+
+
+.list-result li>ul>li:nth-child(3)>span:hover+p{
+	
+	visibility: visible;
+	opacity: 1;	
+	position: absolute;
+	margin-left: 72px;
+	
+	
+		
+}
 
 .info-bulle:after, .info-bulle:before {
 
@@ -1245,6 +1241,15 @@ div#zone3{
 
 }
 
+
+div#zone3{
+
+	float: left;
+	width: 250px;
+	margin-top: 10px;
+	/* background-color: #56a8f9;
+	 */
+}
 
 
 
